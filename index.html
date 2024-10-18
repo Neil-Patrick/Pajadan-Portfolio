@@ -2,25 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Neil Patrick Pajadan's portfolio showcasing web development and design skills.">
+        <meta name="keywords" content="Web Developer, Front-End Developer, Portfolio, Neil Pajadan">
+        <meta name="author" content="Neil Patrick Pajadan">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pajadan Portfolio</title>
-        <link rel="stylesheet" href="website.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="responsive.css">
     </head>
     <body data-theme="dark">
         <header>
             <nav>
-                <span class="logo">
-                    <a href="website.html">
+                <div class="logo">
+                    <a href="index.html">
                         <img src="images/NPMP.png" alt="Logo" class="logo-container">
                     </a>
-                    <a href="website.html">
+                    <a href="index.html">
                         <h1>PAJADAN</h1>
                     </a>
-                </span>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <ul class="nav-elements">
                     <li>
-                        <a href="website.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="#about">About</a>
@@ -42,8 +50,10 @@
         </header>
         <section>
             <div class="frontpage">
-                <h1>Greetings, I'm Neil Patrick Pajadan</h1>
-                <p>Front-End Developer</p>
+                <div class="typewriter">
+                    <h1 id="typewriter-text"></h1>
+                    <p class="glowing-text">Front-End Developer || Web Designer</p>
+                </div>
                 <button type="button" class="button button1" aria-label="Get in touch">
                     <a href="#contact">Get in Touch</a>
                 </button>
@@ -141,9 +151,9 @@
                 <div class="project-wrapper">
                     <article class="project">
                         <h2>Pajadan Blog</h2>
-                        <img src="images\Project 1 Thumbnail.png" alt="Project 1 Thumbnail">
-                        <p>Math Quest is an engaging C# Windows Forms Application designed to help users, particularly young students, improve fundamental arithmetic skills through interactive gameplay.</p>
-                        <a href="https://github.com/Neil-Patrick/Math-Quest" target="_blank">View Project</a>
+                        <img src="images\Project 2 Thumbnail.png" alt="Project 2 Thumbnail">
+                        <p>Pajadan Blog is a blog website formed to take a persons idea and post it for everyone to see. It is my first website created for simple academuic purpose.<p>
+                        <a href="https://github.com/Neil-Patrick/Pajadan-Blogt" target="_blank">View Project</a>
                     </article>
                     <article class="project">
                         <h2>Math-Quest</h2>
