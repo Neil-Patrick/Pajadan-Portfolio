@@ -344,6 +344,7 @@ body {
     align-items: center;
     margin-bottom: 10vh;
     margin-top: 15vh;
+    width: 100%;
 }
 
 .profile-container {
@@ -359,7 +360,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
 }
 
 .profile-container p {
