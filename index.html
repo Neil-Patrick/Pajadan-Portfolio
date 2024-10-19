@@ -1,193 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Neil Patrick Pajadan's portfolio showcasing web development and design skills.">
-        <meta name="keywords" content="Web Developer, Front-End Developer, Portfolio, Neil Pajadan">
-        <meta name="author" content="Neil Patrick Pajadan">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pajadan Portfolio</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="website.css">
-        <link rel="stylesheet" href="responsive.css">
-    </head>
-    <body data-theme="dark">
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/NPMP.png" alt="Logo" class="logo-container">
-                    </a>
-                    <a href="index.html">
-                        <h1>PAJADAN</h1>
-                    </a>
-                </div>
-                <div class="menu-toggle" id="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-elements">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <button id="theme-toggle" aria-label="Toggle Mode">
-                            <i class="fas fa-moon" id="moon-icon"></i>
-                            <i class="fas fa-sun" id="sun-icon" style="display: none;"></i>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div class="frontpage">
-                <div class="typewriter">
-                    <h1 id="typewriter-text"></h1>
-                    <p class="glowing-text">Front-End Developer || Web Designer</p>
-                </div>
-                <button type="button" class="button button1" aria-label="Get in touch">
-                    <a href="#contact">Get in Touch</a>
-                </button>
-            </div>
-            <div class="divider"></div>
-            <div id="about">
-                <h1 style="text-align: center;">About Me
-                    <hr class="section-divider">
-                </h1>
-                <div class="profile-container-wrapper">
-                    <div class="profile-container">
-                        <img
-                            src="images\profile picture.jpg"
-                            alt="Profile Picture"
-                            class="profile-pic"
-                            onclick="openModal()"
-                        >
-                    </div>
-                    <div id="imageModal" class="modal">
-                        <span class="close" onclick="closeModal()">&times;</span>
-                        <img class="modal-content" id="fullImage">
-                    </div>
-                    <ul class="soc-elements">
-                        <li>
-                            <h1 style="font-size: large;">Socials</h1>
-                        </li>
-                        <li>
-                            <img src="images\phone icon.png" alt="Phone Icon">
-                            <a style="font-size: large;">+63 918 290 5615</a>
-                        </li>
-                        <li>
-                            <img src="images\email icon.png" alt="Email Icon">
-                            <a href="https://mail.google.com/" target="_blank" style="font-size: large;">patpajadan6825@gmail.com</a>
-                        </li>
-                        <li>
-                            <img src="images\facebook icon.png" alt="Facebook Icon">
-                            <a href="https://www.facebook.com/pat.pajadan" target="_blank" style="font-size: large;">Pat Pajadan</a>
-                        </li>
-                        <li>
-                            <img src="images\linkedin icon.png" alt="LinkedIn Icon">
-                            <a href="https://www.linkedin.com/in/neil-patrick-pajadan-aa824b32a/" target="_blank" style="font-size: large;">Neil Patrick Pajadan</a>
-                        </li>
-                        <li>
-                            <img src="images\github icon.png" alt="GitHub Icon">
-                            <a href="https://github.com/Neil-Patrick" target="_blank" style="font-size: large;">Neil-Patrick</a>
-                        </li>
-                    </ul>
-                    <ul class="skill-elements">
-                        <li>
-                            <h1 style="font-size: large;">Skills</h1>
-                        </li>
-                        <li class="skill-item">
-                            <span class="skill-name">HTML</span>
-                            <span class="skill-icon">
-                                <img src="images\html icon.png" alt="HTML Icon">
-                            </span>
-                        </li>
-                        <li class="skill-item">
-                            <span class="skill-name">CSS</span>
-                            <span class="skill-icon">
-                                <img src="images\css icon.png" alt="CSS Icon">
-                            </span>
-                        </li>
-                        <li class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-icon">
-                                <img src="images\javascript icon.png" alt="JavaScript Icon">
-                            </span>
-                        </li>
-                        <li class="skill-item">
-                            <span class="skill-name">C#</span>
-                            <span class="skill-icon">
-                                <img src="images\csharp icon.png" alt="C-Sharp Icon">
-                            </span>
-                        </li>
-                        <li class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <span class="skill-icon">
-                                <img src="images\java icon.png" alt="Java Icon">
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <p>
-                    Hello there! I'm Neil Patrick M. Pajadan, a second-year Computer Science student from the Philippines, specializing in Web Design and Development. I'm an aspiring web developer with a passion for creating dynamic and interactive web experiences.
-                Whether it's building sleek interfaces or solving tricky coding challenges, I’m always up for exploring new ways to grow and expand my skills. When I’m not coding, you’ll likely find me brainstorming new projects, collaborating with others, or learning the latest trends in the industry.
-                Let’s connect and create something awesome together!
-                </p>
-            </div>
-            <div class="divider"></div>
-            <div id="projects">
-                <h1 style="text-align: center;">My Projects
-                    <hr class="section-divider">
-                </h1>
-                <div class="project-wrapper">
-                    <article class="project">
-                        <h2>Pajadan Blog</h2>
-                        <img src="images\Project 2 Thumbnail.png" alt="Project 2 Thumbnail">
-                        <p>Pajadan Blog is a blog website formed to take a persons idea and post it for everyone to see. It is my first website created for simple academuic purpose.<p>
-                        <a href="https://github.com/Neil-Patrick/Pajadan-Blog" target="_blank">View Project</a>
-                    </article>
-                    <article class="project">
-                        <h2>Math-Quest</h2>
-                        <img src="images\Project 1 Thumbnail.png" alt="Project 1 Thumbnail">
-                        <p>Math Quest is an engaging C# Windows Forms Application designed to help users, particularly young students, improve fundamental arithmetic skills through interactive gameplay.</p>
-                        <a href="https://github.com/Neil-Patrick/Math-Quest" target="_blank">View Project</a>
-                        <a href="https://www.youtube.com/watch?v=s7MLZh8reNc" target="_blank">Watch Video</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <div class="divider"></div>
-        <div id="contact">
-            <h1 style="text-align: center;">Contact Me
-                <hr class="section-divider">
-            </h1>
-            <form class="form" name="contact" method="POST" data-netlify="true">
-                <label for="name">
-                    <input type="text" name="name" placeholder="Enter Your Name..." id="name" required>
-                </label>
-                <label for="email">
-                    <input type="email" name="email" placeholder="Enter Your Email..." id="email" required>
-                </label>
-                <label for="message">
-                    <textarea rows="4" cols="50" name="message" placeholder="Write Your Message..." id="message" required></textarea>
-                </label>
-                <label>
-                    <button type="submit" class="button button2" aria-label="Submit">Send</button>
-                </label>
-            </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Neil Patrick Pajadan's portfolio showcasing web development and design skills."
+    />
+    <meta
+      name="keywords"
+      content="Web Developer, Front-End Developer, Portfolio, Neil Pajadan"
+    />
+    <meta name="author" content="Neil Patrick Pajadan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pajadan Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="header-footer.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="website.css" />
+  </head>
+  <body data-theme="dark">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/NPMP.png" alt="Logo" class="logo-container" />
+          </a>
+          <a href="index.html">
+            <h1>PAJADAN</h1>
+          </a>
         </div>
-        <script src="website.js"></script>
-    </body>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-elements">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <button id="theme-toggle" aria-label="Toggle Mode">
+              <i class="fas fa-moon" id="moon-icon"></i>
+              <i class="fas fa-sun" id="sun-icon" style="display: none"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="frontpage">
+        <div class="typewriter">
+          <h1 id="typewriter-text"></h1>
+          <p id="typewriter-text2"></p>
+        </div>
+        <button type="button" class="button button1" aria-label="Get in touch">
+          <a href="#contact">Get in Touch</a>
+        </button>
+      </div>
+      <div class="divider"></div>
+      <div id="about">
+        <h1 style="text-align: center">
+          About Me
+          <hr class="section-divider" />
+        </h1>
+        <div class="profile-container-wrapper">
+          <div class="profile-container">
+            <img
+              src="images/profile picture.jpg"
+              alt="Profile Picture"
+              class="profile-pic"
+              onclick="openModal()"
+            />
+          </div>
+          <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="fullImage" />
+          </div>
+        </div>
+        <blockquote class="about-paragraph">
+          <p>
+            "Hello! I'm Neil Patrick M. Pajadan, a second-year Computer Science
+            student from the Philippines specializing in Web Design and
+            Development. As an aspiring web developer, I am passionate about
+            creating dynamic web experiences. With foundational training and a
+            keen interest in learning, I'm excited to grow my skills in the
+            field of web application."
+          </p>
+        </blockquote>
+        <ul class="skill-elements">
+          <li>
+            <h1 style="font-size: large">Skills</h1>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">HTML</span>
+            <span class="skill-icon">
+              <img src="images/html icon.png" alt="HTML Icon" />
+            </span>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">CSS</span>
+            <span class="skill-icon">
+              <img src="images/css icon.png" alt="CSS Icon" />
+            </span>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-icon">
+              <img src="images/javascript icon.png" alt="JavaScript Icon" />
+            </span>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">C#</span>
+            <span class="skill-icon">
+              <img src="images/csharp icon.png" alt="C-Sharp Icon" />
+            </span>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">Java</span>
+            <span class="skill-icon">
+              <img src="images/java icon.png" alt="Java Icon" />
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div id="projects">
+        <h1 style="text-align: center">
+          My Projects
+          <hr class="section-divider" />
+        </h1>
+        <div class="project-wrapper">
+          <article class="project">
+            <h2>Pajadan Blog</h2>
+            <img
+              src="images/Project 2 Thumbnail.png"
+              alt="Project 2 Thumbnail"
+            />
+            <p>
+              Pajadan Blog is a blog website formed to take a persons idea and
+              post it for everyone to see. It is my first website created for
+              simple academuic purpose.
+            </p>
+            <p>
+              <a
+                href="https://github.com/Neil-Patrick/Pajadan-Blog"
+                target="_blank"
+                >View Project</a
+              >
+            </p>
+          </article>
+
+          <article class="project">
+            <h2>Math-Quest</h2>
+            <img
+              src="images/Project 1 Thumbnail.png"
+              alt="Project 1 Thumbnail"
+            />
+            <p>
+              Math Quest is an engaging C# Windows Forms Application designed to
+              help users, particularly young students, improve fundamental
+              arithmetic skills through interactive gameplay.
+            </p>
+            <a href="https://github.com/Neil-Patrick/Math-Quest" target="_blank"
+              >View Project</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=s7MLZh8reNc"
+              target="_blank"
+              >Watch Video</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <div id="contact">
+      <h1 style="text-align: center">
+        Contact Me
+        <hr class="section-divider" />
+      </h1>
+      <form class="form" name="contact" method="POST" data-netlify="true">
+        <label for="name">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name..."
+            id="name"
+            required
+          />
+        </label>
+        <label for="email">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email..."
+            id="email"
+            required
+          />
+        </label>
+        <label for="message">
+          <textarea
+            rows="4"
+            cols="50"
+            name="message"
+            placeholder="Write Your Message..."
+            id="message"
+            required
+          ></textarea>
+        </label>
+        <label>
+          <button type="submit" class="button button2" aria-label="Submit">
+            Send
+          </button>
+        </label>
+      </form>
+    </div>
     <footer>
-        <p>&copy; 2024 Neil Patrick Pajadan</p>
+      <div class="footer-content">
+        <h2>Neil Patrick Pajadan || Front-End Developer</h2>
+        <div class="footer-nav">
+          <ul class="footer-nav-elements">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="socials-container">
+          <h3>Connect with Me</h3>
+          <ul class="soc-elements">
+            <li>
+              <img src="images/phone icon.png" alt="Phone Icon" />
+              <span>+63 918 290 5615</span>
+            </li>
+            <li>
+              <img src="images/email icon.png" alt="Email Icon" />
+              <a href="https://www.gmail.com" target="_blank"
+                >patpajadan6825@gmail.com</a
+              >
+            </li>
+            <li>
+              <img src="images/linkedin icon.png" alt="LinkedIn Icon" />
+              <a
+                href="https://www.linkedin.com/in/neil-patrick-pajadan-aa824b32a/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <img src="images/github icon.png" alt="GitHub Icon" />
+              <a href="https://github.com/Neil-Patrick" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <img src="images/facebook icon.png" alt="Facebook Icon" />
+              <a href="https://www.facebook.com/pat.pajadan" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <img src="images/twitter icon.png" alt="X Icon" />
+              <a href="https://x.com/pajadan6825" target="_blank"
+                >X (Twitter)</a
+              >
+            </li>
+            <li>
+              <img src="images/instagram icon.png" alt="Instagram Icon" />
+              <a href="https://www.instagram.com/aethr_pat/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="credits">
+          Icons from
+          <a href="https://icons8.com/icons" target="_blank">
+            <img
+              src="images/icons8 icon.png"
+              alt="Icons8 Logo"
+              class="credits-logo"
+            />
+            Icons8.com
+          </a>
+          <a href="https://favicon.io" target="_blank">
+            <img
+              src="images/favicon icon.png"
+              alt="Favicon Logo"
+              class="credits-logo"
+            />
+            Favicon.io
+          </a>
+        </p>
+        <p>&copy; 2024 Neil Patrick Pajadan. All Rights Reserved.</p>
+        <button id="back-to-top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
     </footer>
+    <script src="website.js" defer></script>
+  </body>
 </html>
