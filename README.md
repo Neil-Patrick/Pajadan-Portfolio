@@ -19,7 +19,8 @@ I am a passionate web developer with a solid foundation in HTML, CSS, and JavaSc
 - Responsive Design
 - GitHub
 - Netlify
-- Font Awesome (for icons)
+- Icons8 and Favicon (for icons)
+- Font Awesome and Google Fonts (for fonts)
 
 ## Features
 - **Responsive Design**: The website is fully responsive and adjusts seamlessly to different screen sizes.
