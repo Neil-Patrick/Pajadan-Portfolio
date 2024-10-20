@@ -19,7 +19,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Poppins:wght@600&display=swap"
     />
     <link rel="stylesheet" href="header-footer.css" />
     <link rel="stylesheet" href="body.css" />
@@ -27,7 +27,7 @@
   </head>
   <body data-theme="dark">
     <header>
-      <nav>
+      <nav class="header-nav">
         <div class="logo">
           <a href="index.html">
             <img src="images/NPMP.png" alt="Logo" class="logo-container" />
@@ -39,7 +39,7 @@
         <div class="menu-toggle" id="mobile-menu">
           <i class="fas fa-bars"></i>
         </div>
-        <ul class="nav-elements">
+        <ul class="header-nav-elements">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -61,6 +61,7 @@
         </ul>
       </nav>
     </header>
+
     <section>
       <div class="frontpage">
         <div class="typewriter">
@@ -71,7 +72,11 @@
           <a href="#contact">Get in Touch</a>
         </button>
       </div>
-      <div class="divider"></div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
       <div id="about">
         <h1 style="text-align: center">
           About Me
@@ -103,7 +108,7 @@
         </blockquote>
         <ul class="skill-elements">
           <li>
-            <h1 style="font-size: large">Skills</h1>
+            <h1 style="font-size: large">Programmer Skills</h1>
           </li>
           <li class="skill-item">
             <span class="skill-name">HTML</span>
@@ -137,7 +142,11 @@
           </li>
         </ul>
       </div>
-      <div class="divider"></div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
       <div id="projects">
         <h1 style="text-align: center">
           My Projects
@@ -187,130 +196,186 @@
         </div>
       </div>
     </section>
+
     <div class="divider"></div>
-    <div id="contact">
-      <h1 style="text-align: center">
-        Contact Me
-        <hr class="section-divider" />
-      </h1>
-      <form class="form" name="contact" method="POST" data-netlify="true">
-        <label for="name">
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter Your Name..."
-            id="name"
-            required
-          />
-        </label>
-        <label for="email">
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter Your Email..."
-            id="email"
-            required
-          />
-        </label>
-        <label for="message">
-          <textarea
-            rows="4"
-            cols="50"
-            name="message"
-            placeholder="Write Your Message..."
-            id="message"
-            required
-          ></textarea>
-        </label>
-        <label>
-          <button type="submit" class="button button2" aria-label="Submit">
-            Send
-          </button>
-        </label>
-      </form>
-    </div>
+
+    <section>
+      <div id="contact">
+        <h1 style="text-align: center">
+          Contact Me
+          <hr class="section-divider" />
+        </h1>
+        <form class="form" name="contact" method="POST" data-netlify="true">
+          <label for="name">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name..."
+              id="name"
+              required
+            />
+          </label>
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email..."
+              id="email"
+              required
+            />
+          </label>
+          <label for="message">
+            <textarea
+              rows="4"
+              cols="50"
+              name="message"
+              placeholder="Write Your Message..."
+              id="message"
+              required
+            ></textarea>
+          </label>
+          <label>
+            <button type="submit" class="button button2" aria-label="Submit">
+              Send
+            </button>
+          </label>
+        </form>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-content">
-        <h2>Neil Patrick Pajadan || Front-End Developer</h2>
-        <div class="footer-nav">
+        <h1>Neil Patrick Pajadan || Front-End Developer</h1>
+        <nav class="footer-nav">
           <ul class="footer-nav-elements">
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
+        </nav>
         <div class="socials-container">
-          <h3>Connect with Me</h3>
-          <ul class="soc-elements">
-            <li>
-              <img src="images/phone icon.png" alt="Phone Icon" />
-              <span>+63 918 290 5615</span>
-            </li>
-            <li>
-              <img src="images/email icon.png" alt="Email Icon" />
-              <a href="https://www.gmail.com" target="_blank"
-                >patpajadan6825@gmail.com</a
-              >
-            </li>
-            <li>
-              <img src="images/linkedin icon.png" alt="LinkedIn Icon" />
-              <a
-                href="https://www.linkedin.com/in/neil-patrick-pajadan-aa824b32a/"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <img src="images/github icon.png" alt="GitHub Icon" />
-              <a href="https://github.com/Neil-Patrick" target="_blank"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <img src="images/facebook icon.png" alt="Facebook Icon" />
-              <a href="https://www.facebook.com/pat.pajadan" target="_blank"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <img src="images/twitter icon.png" alt="X Icon" />
-              <a href="https://x.com/pajadan6825" target="_blank"
-                >X (Twitter)</a
-              >
-            </li>
-            <li>
-              <img src="images/instagram icon.png" alt="Instagram Icon" />
-              <a href="https://www.instagram.com/aethr_pat/" target="_blank"
-                >Instagram</a
-              >
-            </li>
-          </ul>
+          <h2>Connect with Me</h2>
+          <div class="social-columns">
+            <div class="professional">
+              <h4>Professional</h4>
+              <ul class="soc-elements">
+                <li>
+                  <img src="images/phone icon.png" alt="Phone Icon" />
+                  <span>+63 918 290 5615</span>
+                </li>
+                <li>
+                  <img src="images/email icon.png" alt="Email Icon" />
+                  <a href="https://www.gmail.com" target="_blank">patpajadan6825@gmail.com</a>
+                </li>
+                <li>
+                  <img src="images/linkedin icon.png" alt="LinkedIn Icon" />
+                  <a href="https://www.linkedin.com/in/neil-patrick-pajadan-aa824b32a/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                  <img src="images/github icon.png" alt="GitHub Icon" />
+                  <a href="https://github.com/Neil-Patrick" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <img src="images/stack overflow icon.png" alt="Stack Overflow Icon" />
+                  <a href="https://stackoverflow.com/users/27342895/patrick" target="_blank">Stack Overflow</a>
+                </li>
+                <li>
+                  <img src="images/dev community icon.png" alt="Dev Community Icon" />
+                  <a href="https://dev.to/neilpatrick" target="_blank">Dev Community</a>
+                </li>
+              </ul>
+            </div>
+            <div class="personal">
+              <h4>Personal</h4>
+              <ul class="soc-elements">
+                <li>
+                  <img src="images/facebook icon.png" alt="Facebook Icon" />
+                  <a href="https://www.facebook.com/pat.pajadan" target="_blank">Facebook</a>
+                </li>
+                <li>
+                  <img src="images/discord icon.png" alt="Discord Icon" />
+                  <a href="https://discord.com/" target="_blank">Discord (pajadan)</a>
+                </li>
+                <li>
+                  <img src="images/twitter icon.png" alt="X Icon" />
+                  <a href="https://x.com/pajadan6825" target="_blank">X (Twitter)</a>
+                </li>
+                <li>
+                  <img src="images/instagram icon.png" alt="Instagram Icon" />
+                  <a href="https://www.instagram.com/aethr_pat/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                  <img src="images/threads icon.png" alt="Threads Icon" />
+                  <a href="https://www.threads.net/@aethr_pat" target="_blank">Threads</a>
+                </li>
+                <li>
+                  <img src="images/tiktok icon.png" alt="TikTok Icon" />
+                  <a href="https://www.tiktok.com/@aethr_0" target="_blank">TikTok</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <p class="credits">
-          Icons from
-          <a href="https://icons8.com/icons" target="_blank">
-            <img
-              src="images/icons8 icon.png"
-              alt="Icons8 Logo"
-              class="credits-logo"
-            />
-            Icons8.com
-          </a>
-          <a href="https://favicon.io" target="_blank">
-            <img
-              src="images/favicon icon.png"
-              alt="Favicon Logo"
-              class="credits-logo"
-            />
-            Favicon.io
-          </a>
-        </p>
+        <div class="credits">
+          <div class="credits-item">
+            <h4>Icons from</h4>
+            <ul>
+              <li>
+                <a href="https://icons8.com/icons" target="_blank">
+                  <img
+                    src="images/icons8 icon.png"
+                    alt="Icons8 Logo"
+                    class="credits-logo"
+                  />
+                  Icons8
+                </a>
+              </li>
+              <li>
+                <a href="https://favicon.io" target="_blank">
+                  <img
+                    src="images/favicon icon.png"
+                    alt="Favicon Logo"
+                    class="credits-logo"
+                  />
+                  Favicon
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="credits-item">
+            <h4>Fonts from</h4>
+            <ul>
+              <li>
+                <a href="https://fontawesome.com/" target="_blank">
+                  <img
+                    src="images/font awesome icon.png"
+                    alt="Font Awesome Logo"
+                    class="credits-logo"
+                  />
+                  Font Awesome
+                </a>
+              </li>
+              <li>
+                <a href="https://fonts.google.com/" target="_blank">
+                  <img
+                    src="images/google fonts icon.png"
+                    alt="Google Fonts Logo"
+                    class="credits-logo"
+                  />
+                  Google Fonts
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <p>&copy; 2024 Neil Patrick Pajadan. All Rights Reserved.</p>
         <button id="back-to-top">
           <i class="fas fa-arrow-up"></i>
         </button>
       </div>
     </footer>
+
     <script src="website.js" defer></script>
   </body>
 </html>

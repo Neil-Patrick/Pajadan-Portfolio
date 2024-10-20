@@ -83,8 +83,33 @@ html {
 
 /* Responsive Styles */
 
+@media (max-width: 600px) {
+  .footer-nav-elements {
+    flex-direction: column;
+  }
+  
+  .credits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #back-to-top {
+    right: 15px; 
+    bottom: 20px;
+  }
+
+  .social-columns {
+    flex-direction: column;
+  }
+
+  .professional, .personal {
+    margin: 10px 0; 
+  }
+}
+
+
 @media (max-width: 768px) {
-  .nav-elements {
+  .header-nav-elements {
     display: none;
     flex-direction: column;
     width: 30%;
@@ -101,7 +126,7 @@ html {
     z-index: 100;
   }
 
-  .nav-elements.active {
+  .header-nav-elements.active {
     display: flex;
   }
 
@@ -109,7 +134,7 @@ html {
     display: flex;
   }
 
-  .nav-elements a:hover {
+  .header-nav-elements a:hover {
     background-color: rgb(255, 255, 255, 0.5);
     width: 100%;
     border: none;

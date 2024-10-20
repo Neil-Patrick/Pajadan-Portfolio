@@ -36,4 +36,4 @@ I am a passionate web developer with a solid foundation in HTML, CSS, and JavaSc
 - Click the "Back to Top" button to return to the top of the page smoothly.
 
 ## Contact
-- Feel free to reach out for collaboration or inquiries:
+- Feel free to reach out for collaboration or inquiries.
