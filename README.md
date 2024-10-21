@@ -3,6 +3,7 @@
 Welcome to my portfolio! I am Neil Patrick M. Pajadan, a second-year computer science student specializing in Information Management and aspiring web developer. This portfolio showcases my projects and skills in web development, including front-end design and JavaScript programming.
 
 ## Table of Contents
+
 - [About Me](#about-me)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
@@ -10,9 +11,11 @@ Welcome to my portfolio! I am Neil Patrick M. Pajadan, a second-year computer sc
 - [Contact](#contact)
 
 ## About Me
+
 I am a passionate web developer with a solid foundation in HTML, CSS, and JavaScript. My goal is to create user-friendly and responsive web applications. I continuously seek opportunities to improve my skills and stay updated with the latest industry trends.
 
 ## Technologies Used
+
 - HTML
 - CSS
 - JavaScript
@@ -23,6 +26,7 @@ I am a passionate web developer with a solid foundation in HTML, CSS, and JavaSc
 - Font Awesome and Google Fonts (for fonts)
 
 ## Features
+
 - **Responsive Design**: The website is fully responsive and adjusts seamlessly to different screen sizes.
 - **Typewriter Effect**: A dynamic typewriter effect showcases my introductory message and other details.
 - **Theme Toggle**: Users can switch between light and dark modes.
@@ -31,9 +35,20 @@ I am a passionate web developer with a solid foundation in HTML, CSS, and JavaSc
 - **Back to Top Button**: A button that appears when scrolling down, allowing users to return to the top of the page smoothly.
 
 ## Usage
+
 - You can explore the portfolio by navigating through the menu items.
 - Use the theme toggle button to switch between light and dark modes.
 - Click the "Back to Top" button to return to the top of the page smoothly.
 
 ## Contact
+
 - Feel free to reach out for collaboration or inquiries.
+
+
+@media (min-width: 1536px) {}
+@media (min-width: 1440px) and (max-width: 1535px) {}
+@media (min-width: 1280px) and (max-width: 1439px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 640px) and (max-width: 767px) {}
+@media (min-width: 475px) and (max-width: 639px) {}

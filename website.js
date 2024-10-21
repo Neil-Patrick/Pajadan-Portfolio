@@ -1,9 +1,11 @@
+/* Mobile Nav Bar */
+
 const mobileMenuToggle = document.getElementById("mobile-menu");
 const navList = document.querySelector(".header-nav-elements");
 
 mobileMenuToggle.addEventListener("click", function () {
   navList.classList.toggle("active");
-  mobileMenuToggle.classList.toggle("active"); 
+  mobileMenuToggle.classList.toggle("active");
 });
 
 document.addEventListener("click", function (event) {
@@ -12,9 +14,29 @@ document.addEventListener("click", function (event) {
     !navList.contains(event.target)
   ) {
     navList.classList.remove("active");
-    mobileMenuToggle.classList.remove("active"); 
+    mobileMenuToggle.classList.remove("active");
   }
 });
+
+/* Light/Dark Mode Toggle */
+
+document.getElementById("theme-toggle").addEventListener("click", function () {
+  const body = document.body;
+  const moonIcon = document.getElementById("moon-icon");
+  const sunIcon = document.getElementById("sun-icon");
+
+  if (body.getAttribute("data-theme") === "dark") {
+    body.setAttribute("data-theme", "light");
+    moonIcon.style.display = "none";
+    sunIcon.style.display = "inline";
+  } else {
+    body.setAttribute("data-theme", "dark");
+    moonIcon.style.display = "inline";
+    sunIcon.style.display = "none";
+  }
+});
+
+/* Typewriter Effect */
 
 const typewriterText = document.getElementById("typewriter-text");
 const staticText = "Greetings, I'm Neil Patrick Pajadan";
@@ -75,21 +97,7 @@ function typeWriter2() {
 
 typeWriter1();
 
-document.getElementById("theme-toggle").addEventListener("click", function () {
-  const body = document.body;
-  const moonIcon = document.getElementById("moon-icon");
-  const sunIcon = document.getElementById("sun-icon");
-
-  if (body.getAttribute("data-theme") === "dark") {
-    body.setAttribute("data-theme", "light");
-    moonIcon.style.display = "none";
-    sunIcon.style.display = "inline";
-  } else {
-    body.setAttribute("data-theme", "dark");
-    moonIcon.style.display = "inline";
-    sunIcon.style.display = "none";
-  }
-}); 
+/* Profile Pic Modal */
 
 function openModal() {
   var modal = document.getElementById("imageModal");
@@ -106,6 +114,8 @@ function closeModal() {
 
 const backToTopButton = document.getElementById("back-to-top");
 let timer;
+
+/* Back to the Top Button */
 
 window.addEventListener("scroll", () => {
   const footer = document.querySelector("footer");

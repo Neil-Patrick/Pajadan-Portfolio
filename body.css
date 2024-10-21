@@ -4,12 +4,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   position: relative;
   animation: fadeIn 1s ease-in-out;
-  overflow-x: hidden;
 }
 
 @keyframes fadeIn {
@@ -25,7 +24,7 @@ body {
 /* Body :: Front Page */
 
 .frontpage {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 25px;
   color: var(--text-color);
   margin-left: 30px;
@@ -60,13 +59,17 @@ body {
 
 .button1 {
   background-color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
-  border: 2px solid var(--tertiary-color);
   margin-top: 30px;
   text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
 }
 
 .button1:hover {
+  transform: translateY(-5px) scale(1.05);
   background-color: var(--secondary-color);
   color: var(--text-color);
 }
@@ -79,13 +82,13 @@ body {
 /* Body :: About Me Page */
 
 #about {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color2); 
+  background-color: var(--background-color2);
   padding: 100px;
 }
 
@@ -100,10 +103,10 @@ body {
 
 .profile-container {
   position: relative;
-  border-radius: 100%; 
+  border-radius: 100%;
   overflow: hidden;
-  width: 500px; 
-  height: 500px; 
+  width: 500px;
+  height: 500px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -114,7 +117,7 @@ body {
 }
 
 .profile-container:hover {
-  transform: scale(1.05) rotate(3deg); 
+  transform: scale(1.05) rotate(3deg);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -126,33 +129,32 @@ body {
 }
 
 .profile-container:hover .profile-pic {
-  opacity: 0.9; 
+  opacity: 0.9;
 }
 
 .about-paragraph {
-  font-family: 'Merriweather', serif;
-  font-size: 18px; 
-  color: var(--text-color); 
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: var(--text-color);
   padding: 20px;
   margin: 20px auto;
-  border-left: 4px solid var(--primary-color); 
-  background-color: rgba(255, 255, 255, 0.1); 
-  border-radius: 10px; 
-  max-width: 800px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-left: 4px solid var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, background-color 0.3s ease;
   margin-bottom: 5em;
 }
 
 .about-paragraph:hover {
-  transform: scale(1.05); 
-  background-color: rgba(255, 255, 255, 0.3); 
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-
 .about-paragraph p {
-  margin: 0; 
-  text-align: center; 
+  margin: 0;
+  text-align: center;
 }
 
 .skill-elements {
@@ -205,7 +207,7 @@ body {
 /* Body :: Projects Page*/
 
 #projects {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   color: var(--text-color);
   text-align: center;
@@ -259,7 +261,7 @@ body {
 /* Body :: Contact Me Page */
 
 #contact {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   color: var(--text-color);
   text-align: center;
