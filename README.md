@@ -41,5 +41,5 @@ I am a passionate web developer with a solid foundation in HTML, CSS, and JavaSc
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
