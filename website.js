@@ -2,10 +2,24 @@
 
 const mobileMenuToggle = document.getElementById("mobile-menu");
 const navList = document.querySelector(".header-nav-elements");
+const navLinks = document.querySelectorAll(".header-nav-elements a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    navList.classList.remove("active");
+    mobileMenuToggle.classList.remove("active");
+
+    mobileMenuToggle.setAttribute("aria-expanded", "false");
+  });
+});
 
 mobileMenuToggle.addEventListener("click", function () {
   navList.classList.toggle("active");
   mobileMenuToggle.classList.toggle("active");
+
+  const expanded =
+    mobileMenuToggle.getAttribute("aria-expanded") === "true" || false;
+  mobileMenuToggle.setAttribute("aria-expanded", !expanded);
 });
 
 document.addEventListener("click", function (event) {
@@ -15,25 +29,60 @@ document.addEventListener("click", function (event) {
   ) {
     navList.classList.remove("active");
     mobileMenuToggle.classList.remove("active");
+    mobileMenuToggle.setAttribute("aria-expanded", "false");
   }
 });
 
-/* Light/Dark Mode Toggle */
+/* Theme Modal */
+
+const themeButton = document.getElementById("theme-button");
+const themeModal = document.getElementById("theme-modal");
+const closeButton = document.getElementById("close-button");
+
+themeButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  themeModal.style.display = "flex";
+});
+
+closeButton.addEventListener("click", function () {
+  themeModal.style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === themeModal) {
+    themeModal.style.display = "none";
+  }
+});
+
+/* MODAL :: Theme Toggle */
 
 document.getElementById("theme-toggle").addEventListener("click", function () {
   const body = document.body;
   const moonIcon = document.getElementById("moon-icon");
   const sunIcon = document.getElementById("sun-icon");
+  const themeText = document.getElementById("theme-text");
 
-  if (body.getAttribute("data-theme") === "dark") {
-    body.setAttribute("data-theme", "light");
-    moonIcon.style.display = "none";
-    sunIcon.style.display = "inline";
-  } else {
-    body.setAttribute("data-theme", "dark");
-    moonIcon.style.display = "inline";
-    sunIcon.style.display = "none";
-  }
+  const isDarkMode = body.getAttribute("data-theme") === "dark";
+
+  themeText.style.opacity = "0";
+
+  setTimeout(() => {
+    if (isDarkMode) {
+      body.setAttribute("data-theme", "light");
+      moonIcon.style.display = "none";
+      sunIcon.style.display = "inline";
+      themeText.textContent = "Light Mode";
+    } else {
+      body.setAttribute("data-theme", "dark");
+      moonIcon.style.display = "inline";
+      sunIcon.style.display = "none";
+      themeText.textContent = "Dark Mode";
+    }
+
+    themeText.style.opacity = "1";
+  }, 300);
+
+  themeToggle.classList.toggle("active");
 });
 
 /* Typewriter Effect */
@@ -44,8 +93,8 @@ let charIndex1 = 0;
 
 const typewriterText2 = document.getElementById("typewriter-text2");
 const textsToCycle = [
-  "Front-End Developer",
-  "Web Designer",
+  "Front-End Programmer",
+  "Web Developer",
   "ComSci Major Student",
 ];
 let textIndex = 0;
@@ -112,10 +161,10 @@ function closeModal() {
   document.getElementById("imageModal").style.display = "none";
 }
 
+/* Back to the Top Button */
+
 const backToTopButton = document.getElementById("back-to-top");
 let timer;
-
-/* Back to the Top Button */
 
 window.addEventListener("scroll", () => {
   const footer = document.querySelector("footer");
@@ -150,4 +199,18 @@ function hideBackToTopButton() {
 
 backToTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+/* Footer Fade In */
+
+window.addEventListener("scroll", () => {
+  const footer = document.querySelector("footer");
+  const footerTop = footer.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (footerTop <= windowHeight) {
+    footer.style.opacity = 1;
+  } else {
+    footer.style.opacity = 0;
+  }
 });

@@ -1,14 +1,15 @@
-# Neil Patrick M. Pajadan's Portfolio
+# Neil Patrick Pajadan's Portfolio
 
-Welcome to my portfolio! I am Neil Patrick M. Pajadan, a second-year computer science student specializing in Information Management and aspiring web developer. This portfolio showcases my projects and skills in web development, including front-end design and JavaScript programming.
+Welcome to my portfolio! This site showcases my work as an aspiring web developer and programmer. Here, you can find information about my projects, skills, and background.
 
 ## Table of Contents
+
 
 - [About Me](#about-me)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Usage](#usage)
-- [Contact](#contact)
+- [License](#license)
 
 ## About Me
 
@@ -16,23 +17,21 @@ I am a passionate web developer with a solid foundation in HTML, CSS, and JavaSc
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- Responsive Design
-- GitHub
-- Netlify
-- Icons8 and Favicon (for icons)
-- Font Awesome and Google Fonts (for fonts)
+- **HTML**: For the structure of the portfolio.
+- **CSS**: For styling and layout.
+- **JavaScript**: For interactivity and dynamic content.
+- **GitHub**: As server.
+- **Netlify**: As server.
 
 ## Features
 
-- **Responsive Design**: The website is fully responsive and adjusts seamlessly to different screen sizes.
-- **Typewriter Effect**: A dynamic typewriter effect showcases my introductory message and other details.
-- **Theme Toggle**: Users can switch between light and dark modes.
-- **Mobile Navigation**: A mobile-friendly menu that expands and collapses.
-- **Frosted Glass Effect**: Modern design elements like a frosted glass effect for a polished look.
-- **Back to Top Button**: A button that appears when scrolling down, allowing users to return to the top of the page smoothly.
+- **Mobile-First Design**: The portfolio is designed with a mobile-first approach, ensuring a responsive experience across devices.
+- **Interactive Navigation**: The mobile navigation menu toggles open and closed, with options to close by clicking outside.
+- **Theme Toggle**: Users can switch between light and dark themes with smooth transitions.
+- **Typewriter Effect**: An engaging typewriter effect introduces my name and rotates through my skills.
+- **Profile Picture Modal**: Clicking on my profile picture opens a modal with an enlarged view.
+- **Back to Top Button**: A button appears when scrolling down, allowing users to easily return to the top of the page.
+- **Footer Fade-In**: The footer gradually fades in as the user scrolls down the page.
 
 ## Usage
 
@@ -40,15 +39,7 @@ I am a passionate web developer with a solid foundation in HTML, CSS, and JavaSc
 - Use the theme toggle button to switch between light and dark modes.
 - Click the "Back to Top" button to return to the top of the page smoothly.
 
-## Contact
+## License
 
-- Feel free to reach out for collaboration or inquiries.
+This project is licensed under the MIT License.
 
-
-@media (min-width: 1536px) {}
-@media (min-width: 1440px) and (max-width: 1535px) {}
-@media (min-width: 1280px) and (max-width: 1439px) {}
-@media (min-width: 1024px) and (max-width: 1279px) {}
-@media (min-width: 768px) and (max-width: 1023px) {}
-@media (min-width: 640px) and (max-width: 767px) {}
-@media (min-width: 475px) and (max-width: 639px) {}

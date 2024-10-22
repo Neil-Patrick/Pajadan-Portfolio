@@ -1,0 +1,239 @@
+/* BODY :: Footer Styles */
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #333, #444);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4 {
+  letter-spacing: 1px;
+}
+
+/* BODY :: Footer Navigation */
+
+.footer-nav {
+  margin: 20px 0;
+}
+
+.footer-nav-elements {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.footer-nav-elements a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-nav-elements a:hover {
+  background-color: var(--secondary-color);
+  color: black;
+  transform: scale(1.1);
+}
+
+/* BODY :: Footer Socials */
+
+.social-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.professional,
+.personal {
+  flex: 1;
+  margin: 0;
+}
+
+.social-columns h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.soc-elements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.soc-elements li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.soc-elements li:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.soc-elements a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.soc-elements a:hover {
+  color: black;
+}
+
+.soc-elements img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.soc-elements img:hover {
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* BODY :: Credits */
+
+.credits {
+  display: flex;
+  flex-direction: column; /* Stack on mobile */
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  gap: 20px;
+}
+
+.credits-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.credits-item h4 {
+  margin-bottom: 10px;
+}
+
+.credits-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.credits-item li {
+  margin-bottom: 10px;
+}
+
+.credits-logo {
+  vertical-align: middle;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.credits-item a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+/* BODY :: Back to Top Button */
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.3s;
+  z-index: 1000;
+  opacity: 0;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#back-to-top.show {
+  display: block;
+  opacity: 1;
+}
+
+#back-to-top:hover {
+  transform: scale(1.1);
+  background-color: var(--primary-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+}
+
+#back-to-top:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
