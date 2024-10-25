@@ -39,6 +39,7 @@ footer h4 {
   gap: 10px;
   margin: 20px 0;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer-nav-elements a {
@@ -99,7 +100,7 @@ footer h4 {
 .soc-elements li:hover {
   background-color: var(--secondary-color);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
 .soc-elements a {
@@ -119,27 +120,11 @@ footer h4 {
   width: 25px;
   height: 25px;
   margin-right: 10px;
-  transition: transform 0.2s ease;
+  will-change: transform 0.4s ease-in-out;
 }
 
 .soc-elements img:hover {
-  animation: bounce 0.6s;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
+  transform: scale(1.2);
 }
 
 /* BODY :: Credits */
