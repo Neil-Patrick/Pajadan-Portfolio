@@ -146,7 +146,7 @@ function typeWriter2() {
 
 typeWriter1();
 
-/* Profile Pic Modal */
+/* MODAL :: Profile Pic Modal */
 
 function openModal() {
   var modal = document.getElementById("imageModal");
@@ -160,6 +160,41 @@ function openModal() {
 function closeModal() {
   document.getElementById("imageModal").style.display = "none";
 }
+
+/* MODAL :: Credentials Gallery */
+
+function certopenModal(certimg) {
+  const certmodal = document.getElementById("cert-modal");
+  const certmodalImage = document.getElementById("cert-modal-image");
+  const loader = document.querySelector('.loader');
+
+  loader.style.display = 'block'; 
+  certmodal.style.display = "block"; 
+  certmodalImage.src = certimg.src; 
+
+  certmodalImage.onload = function() {
+    loader.style.display = 'none'; 
+  }
+}
+
+function certcloseModal() {
+  const certmodal = document.getElementById("cert-modal");
+  certmodal.style.display = "none";
+}
+
+/* Footer Fade In */
+
+window.addEventListener("scroll", () => {
+  const footer = document.querySelector("footer");
+  const footerTop = footer.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (footerTop <= windowHeight) {
+    footer.style.opacity = 1;
+  } else {
+    footer.style.opacity = 0;
+  }
+});
 
 /* Back to the Top Button */
 
@@ -199,18 +234,4 @@ function hideBackToTopButton() {
 
 backToTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-/* Footer Fade In */
-
-window.addEventListener("scroll", () => {
-  const footer = document.querySelector("footer");
-  const footerTop = footer.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (footerTop <= windowHeight) {
-    footer.style.opacity = 1;
-  } else {
-    footer.style.opacity = 0;
-  }
 });

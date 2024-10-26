@@ -136,6 +136,119 @@
   text-align: center;
 }
 
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  margin: 20px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0;
+  height: 100%;
+  border-left: 2px solid var(--primary-color);
+}
+
+.timeline-content {
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+}
+
+.timeline-content h4 {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.timeline-content p {
+  font-size: 0.9em;
+  color: var(--text-color);
+}
+
+/* BODY :: Credentials */
+
+#certifications {
+  scroll-margin-top: 70px;
+  margin-bottom: 10vh;
+}
+
+#certifications h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.certificates-gallery {
+  padding: 50px;
+  display: flex;               
+  flex-direction: column;      
+  align-items: center;        
+}
+
+.certificates-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  width: 60%;
+  max-width: 1000px;
+  margin: auto; 
+  margin-top: 10vh;              
+}
+
+.certificates-gallery-item {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s; 
+  border-radius: 5px;        
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certificates-gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+/* BODY :: Skills */
+
+#skills {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color2);
+  padding: 50px;
+  scroll-margin-top: 70px;
+}
+
+#skills h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 .skill-elements {
   list-style: none;
   padding: 0;
