@@ -154,7 +154,7 @@
 }
 
 .timeline-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -10px;
   top: 0;
@@ -199,9 +199,9 @@
 
 .certificates-gallery {
   padding: 50px;
-  display: flex;               
-  flex-direction: column;      
-  align-items: center;        
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .certificates-gallery-container {
@@ -210,8 +210,8 @@
   gap: 20px;
   width: 60%;
   max-width: 1000px;
-  margin: auto; 
-  margin-top: 10vh;              
+  margin: auto;
+  margin-top: 10vh;
 }
 
 .certificates-gallery-item {
@@ -219,14 +219,14 @@
   max-width: 250px;
   height: auto;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.3s; 
-  border-radius: 5px;        
+  transition: transform 0.2s, box-shadow 0.3s;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .certificates-gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* BODY :: Skills */

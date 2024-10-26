@@ -166,15 +166,15 @@ function closeModal() {
 function certopenModal(certimg) {
   const certmodal = document.getElementById("cert-modal");
   const certmodalImage = document.getElementById("cert-modal-image");
-  const loader = document.querySelector('.loader');
+  const loader = document.querySelector(".loader");
 
-  loader.style.display = 'block'; 
-  certmodal.style.display = "block"; 
-  certmodalImage.src = certimg.src; 
+  loader.style.display = "block";
+  certmodal.style.display = "block";
+  certmodalImage.src = certimg.src;
 
-  certmodalImage.onload = function() {
-    loader.style.display = 'none'; 
-  }
+  certmodalImage.onload = function () {
+    loader.style.display = "none";
+  };
 }
 
 function certcloseModal() {
