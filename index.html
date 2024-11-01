@@ -14,18 +14,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pajadan Portfolio</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      referrerpolicy="no-referrer"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Poppins:wght@600&display=swap"
     />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/base.css" />
   </head>
 
   <body data-theme="dark">
@@ -36,7 +41,7 @@
             <img src="images/NPMP.png" alt="Logo" class="logo-container" />
           </a>
           <a href="index.html">
-            <h1>Neil Patrick</h1>
+            <h1>Neil Patrick Pajadan</h1>
           </a>
         </div>
         <div class="menu-toggle" id="mobile-menu" aria-expanded="false">
@@ -113,6 +118,7 @@
               alt="Profile Picture"
               class="profile-pic"
               onclick="openModal()"
+              loading="lazy"
             />
           </div>
           <div id="imageModal" class="profile-modal">
@@ -180,24 +186,28 @@
             alt="Certificate 4"
             class="certificates-gallery-item"
             onclick="certopenModal(this)"
+            loading="lazy"
           />
           <img
             src="images/intro to vgd.png"
             alt="Certificate 1"
             class="certificates-gallery-item"
             onclick="certopenModal(this)"
+            loading="lazy"
           />
           <img
             src="images/js essentials 1.png"
             alt="Certificate 2"
             class="certificates-gallery-item"
             onclick="certopenModal(this)"
+            loading="lazy"
           />
           <img
             src="images/js essentials 2.png"
             alt="Certificate 3"
             class="certificates-gallery-item"
             onclick="certopenModal(this)"
+            loading="lazy"
           />
         </div>
       </div>
@@ -269,6 +279,7 @@
             <img
               src="images/Project 1 Thumbnail.png"
               alt="Project 1 Thumbnail"
+              loading="lazy"
             />
             <p>
               Math Quest is an engaging C# Windows Forms Application designed to
@@ -500,7 +511,6 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="website.js"></script>
+    <script src="website.js" defer></script>
   </body>
 </html>
