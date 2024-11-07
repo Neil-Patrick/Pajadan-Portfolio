@@ -384,7 +384,7 @@ body {
   }
 
   .header-nav-elements a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--background-color2);
     border-radius: 5px;
   }
 
