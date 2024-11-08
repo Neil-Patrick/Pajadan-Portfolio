@@ -6,7 +6,7 @@ header {
   font-family: "Poppins", sans-serif;
   background-size: cover;
   background-position: center;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header-nav {

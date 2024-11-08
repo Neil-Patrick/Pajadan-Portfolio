@@ -188,17 +188,17 @@
 
 #certifications {
   scroll-margin-top: 70px;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 #certifications h1 {
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .certificates-gallery {
-  padding: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,26 +207,49 @@
 .certificates-gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  width: 60%;
-  max-width: 1000px;
+  gap: 15px;
+  width: 80%;
   margin: auto;
-  margin-top: 10vh;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 75px;
 }
 
 .certificates-gallery-item {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  cursor: pointer;
+  background-color: var(--background-color2);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
   transition: transform 0.2s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.certificates-gallery-item img {
+  width: 100%;
+  max-width: 100%;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cert-details {
+  margin-top: 8px;
+}
+
+.cert-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.cert-issuer,
+.cert-date {
+  font-size: 12px;
+  color: var(--text-color);
 }
 
 .certificates-gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* BODY :: Skills */
@@ -260,7 +283,8 @@
 .skill-elements h1 {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-size: 1.5em;
 }
 

@@ -265,12 +265,21 @@ body {
   }
 
   .certificates-gallery-container {
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
   }
 
   .certificates-gallery-item {
-    width: 100%;
-    max-width: 500px;
+    padding: 15px;
+  }
+
+  .cert-name {
+    font-size: 16px;
+  }
+
+  .cert-issuer,
+  .cert-date {
+    font-size: 14px;
   }
 
   #skills h1 {

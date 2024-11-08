@@ -20,8 +20,8 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      referrerpolicy="no-referrer"
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
@@ -38,7 +38,12 @@
       <nav class="header-nav">
         <div class="logo">
           <a href="index.html">
-            <img src="images/NPMP.png" alt="Logo" class="logo-container" />
+            <img
+              src="images/NPMP.png"
+              alt="Logo"
+              class="logo-container"
+              loading="lazy"
+            />
           </a>
           <a href="index.html">
             <h1>Neil Patrick Pajadan</h1>
@@ -125,7 +130,7 @@
             <span class="profile-modal-close" onclick="closeModal()"
               >&times;</span
             >
-            <img class="profile-modal-content" id="fullImage" />
+            <img class="profile-modal-content" id="fullImage" loading="lazy" />
           </div>
         </div>
         <blockquote class="about-paragraph">
@@ -151,7 +156,7 @@
             <div class="timeline-content">
               <h3>2021 - 2023: Senior High School</h3>
               <h4>Science, Technology, Engineering, and Mathematics (STEM)</h4>
-              <p>Laguna Science Integrated High School</p>
+              <p>Laguna Science National High School</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -181,41 +186,119 @@
           <hr class="section-divider" />
         </h1>
         <div class="certificates-gallery-container">
-          <img
-            src="images/basic principles of design.png"
-            alt="Certificate 4"
-            class="certificates-gallery-item"
-            onclick="certopenModal(this)"
-            loading="lazy"
-          />
-          <img
-            src="images/intro to vgd.png"
-            alt="Certificate 1"
-            class="certificates-gallery-item"
-            onclick="certopenModal(this)"
-            loading="lazy"
-          />
-          <img
-            src="images/js essentials 1.png"
-            alt="Certificate 2"
-            class="certificates-gallery-item"
-            onclick="certopenModal(this)"
-            loading="lazy"
-          />
-          <img
-            src="images/js essentials 2.png"
-            alt="Certificate 3"
-            class="certificates-gallery-item"
-            onclick="certopenModal(this)"
-            loading="lazy"
-          />
+          <div class="certificates-gallery-item">
+            <img
+              src="images/elementary diploma.jpg"
+              alt="Elementary Diploma"
+              onclick="certopenModal(this)"
+              loading="lazy"
+            />
+            <div class="cert-details">
+              <p class="cert-name">Title: Elementary School Diploma</p>
+              <p class="cert-issuer">
+                Issued by: The Refiner's Christian School
+              </p>
+              <p class="cert-date">Date: April 1, 2017</p>
+            </div>
+          </div>
+          <div class="certificates-gallery-item">
+            <img
+              src="images/junior high diploma.jpg"
+              alt="Junior High Diploma"
+              onclick="certopenModal(this)"
+              loading="lazy"
+            />
+            <div class="cert-details">
+              <p class="cert-name">Title: Junior High School Diploma</p>
+              <p class="cert-issuer">
+                Issued by: The Refiner's Christian School
+              </p>
+              <p class="cert-date">Date: May 29, 2021</p>
+            </div>
+          </div>
+          <div class="certificates-gallery-item">
+            <img
+              src="images/senior high diploma.jpg"
+              alt="Senior High Diploma"
+              onclick="certopenModal(this)"
+              loading="lazy"
+            />
+            <div class="cert-details">
+              <p class="cert-name">Title: Senior High School Diploma</p>
+              <p class="cert-issuer">
+                Issued by: Laguna Science National High School
+              </p>
+              <p class="cert-date">Date: July 14, 2023</p>
+            </div>
+          </div>
+          <div class="certificates-gallery-item">
+            <img
+              src="images/basic principles of design.png"
+              alt="Basic Principles of Design"
+              onclick="certopenModal(this)"
+              loading="lazy"
+            />
+            <div class="cert-details">
+              <p class="cert-name">Title: Basic Principles of Design</p>
+              <p class="cert-issuer">Issued by: IBM SkillsBuild, Adobe Inc.</p>
+              <p class="cert-date">Date: October 26, 2024</p>
+            </div>
+          </div>
+          <div class="certificates-gallery-item">
+            <img
+              src="images/intro to vgd.png"
+              alt="Intro to VGD"
+              onclick="certopenModal(this)"
+              loading="lazy"
+            />
+            <div class="cert-details">
+              <p class="cert-name">
+                Title: Introduction to Visual Graphic Design (VGD)
+              </p>
+              <p class="cert-issuer">
+                Issued by: Technical Education and Skills Development Authority
+                (TESDA)
+              </p>
+              <p class="cert-date">Date: October 25, 2024</p>
+            </div>
+          </div>
+          <div class="certificates-gallery-item">
+            <img
+              src="images/js essentials 1.png"
+              alt="JS Essentials 1"
+              onclick="certopenModal(this)"
+              loading="lazy"
+            />
+            <div class="cert-details">
+              <p class="cert-name">Title: JavaScript Essentials 1</p>
+              <p class="cert-issuer">
+                Issued by: Cisco Networking Academy, OpenEDG JS Institute
+              </p>
+              <p class="cert-date">Date: September 22, 2024</p>
+            </div>
+          </div>
+          <div class="certificates-gallery-item">
+            <img
+              src="images/js essentials 2.png"
+              alt="JS Essentials 2"
+              onclick="certopenModal(this)"
+              loading="lazy"
+            />
+            <div class="cert-details">
+              <p class="cert-name">Title: JavaScript Essentials 2</p>
+              <p class="cert-issuer">
+                Issued by: Cisco Networking Academy, OpenEDG JS Institute
+              </p>
+              <p class="cert-date">Date: October 23, 2024</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <div id="cert-modal" class="cert-modal" onclick="certcloseModal()">
       <span class="cert-close">&times;</span>
-      <img class="cert-modal-content" id="cert-modal-image" />
+      <img class="cert-modal-content" id="cert-modal-image" loading="lazy" />
       <div class="loader"></div>
     </div>
 
@@ -229,36 +312,67 @@
         </h1>
         <ul class="skill-elements">
           <li>
-            <h1 style="font-size: x-large">Programming Languages</h1>
+            <h1 style="font-size: x-large">Web Development</h1>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">Canva</span>
+            <span class="skill-icon">
+              <img
+                src="images/canva icon.png"
+                alt="Canva Icon"
+                loading="lazy"
+              />
+            </span>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">Figma</span>
+            <span class="skill-icon">
+              <img
+                src="images/figma icon.png"
+                alt="Figma Icon"
+                loading="lazy"
+              />
+            </span>
           </li>
           <li class="skill-item">
             <span class="skill-name">HTML</span>
             <span class="skill-icon">
-              <img src="images/html icon.png" alt="HTML Icon" />
+              <img src="images/html icon.png" alt="HTML Icon" loading="lazy" />
             </span>
           </li>
           <li class="skill-item">
             <span class="skill-name">CSS</span>
             <span class="skill-icon">
-              <img src="images/css icon.png" alt="CSS Icon" />
+              <img src="images/css icon.png" alt="CSS Icon" loading="lazy" />
             </span>
           </li>
           <li class="skill-item">
             <span class="skill-name">JavaScript</span>
             <span class="skill-icon">
-              <img src="images/javascript icon.png" alt="JavaScript Icon" />
+              <img
+                src="images/javascript icon.png"
+                alt="JavaScript Icon"
+                loading="lazy"
+              />
             </span>
+          </li>
+          <li>
+            <h1 style="font-size: x-large">Programming Languages</h1>
           </li>
           <li class="skill-item">
             <span class="skill-name">C#</span>
             <span class="skill-icon">
-              <img src="images/csharp icon.png" alt="C-Sharp Icon" />
+              <img
+                src="images/csharp icon.png"
+                alt="C-Sharp Icon"
+                loading="lazy"
+              />
             </span>
           </li>
           <li class="skill-item">
             <span class="skill-name">Java</span>
             <span class="skill-icon">
-              <img src="images/java icon.png" alt="Java Icon" />
+              <img src="images/java icon.png" alt="Java Icon" loading="lazy" />
             </span>
           </li>
         </ul>
@@ -364,17 +478,29 @@
               <h4>Professional</h4>
               <ul class="soc-elements">
                 <li>
-                  <img src="images/phone icon.png" alt="Phone Icon" />
+                  <img
+                    src="images/phone icon.png"
+                    alt="Phone Icon"
+                    loading="lazy"
+                  />
                   <span>+63 918 290 5615</span>
                 </li>
                 <li>
-                  <img src="images/email icon.png" alt="Email Icon" />
+                  <img
+                    src="images/email icon.png"
+                    alt="Email Icon"
+                    loading="lazy"
+                  />
                   <a href="https://www.gmail.com" target="_blank"
                     >neilpatrick.dev@gmail.com</a
                   >
                 </li>
                 <li>
-                  <img src="images/linkedin icon.png" alt="LinkedIn Icon" />
+                  <img
+                    src="images/linkedin icon.png"
+                    alt="LinkedIn Icon"
+                    loading="lazy"
+                  />
                   <a
                     href="https://www.linkedin.com/in/neil-patrick-pajadan-b3a40b337/"
                     target="_blank"
@@ -382,7 +508,11 @@
                   >
                 </li>
                 <li>
-                  <img src="images/github icon.png" alt="GitHub Icon" />
+                  <img
+                    src="images/github icon.png"
+                    alt="GitHub Icon"
+                    loading="lazy"
+                  />
                   <a href="https://github.com/Neil-Patrick" target="_blank"
                     >GitHub</a
                   >
@@ -391,6 +521,7 @@
                   <img
                     src="images/stack overflow icon.png"
                     alt="Stack Overflow Icon"
+                    loading="lazy"
                   />
                   <a
                     href="https://stackoverflow.com/users/27342895/patrick"
@@ -402,6 +533,7 @@
                   <img
                     src="images/dev community icon.png"
                     alt="Dev Community Icon"
+                    loading="lazy"
                   />
                   <a href="https://dev.to/neilpatrick" target="_blank"
                     >Dev Community</a
@@ -411,6 +543,7 @@
                   <img
                     src="images/leetcode icon.png"
                     alt="LeetCode Icon"
+                    loading="lazy"
                   />
                   <a href="https://leetcode.com/u/neil-patrick/" target="_blank"
                     >LeetCode</a
@@ -422,44 +555,74 @@
               <h4>Personal</h4>
               <ul class="soc-elements">
                 <li>
-                  <img src="images/facebook icon.png" alt="Facebook Icon" />
+                  <img
+                    src="images/facebook icon.png"
+                    alt="Facebook Icon"
+                    loading="lazy"
+                  />
                   <a href="https://www.facebook.com/pat.pajadan" target="_blank"
                     >Facebook</a
                   >
                 </li>
                 <li>
-                  <img src="images/discord icon.png" alt="Discord Icon" />
+                  <img
+                    src="images/discord icon.png"
+                    alt="Discord Icon"
+                    loading="lazy"
+                  />
                   <a href="https://discord.com/" target="_blank"
                     >Discord (pajadan)</a
                   >
                 </li>
                 <li>
-                  <img src="images/twitter icon.png" alt="X Icon" />
+                  <img
+                    src="images/twitter icon.png"
+                    alt="X Icon"
+                    loading="lazy"
+                  />
                   <a href="https://x.com/pajadan6825" target="_blank"
                     >X (Twitter)</a
                   >
                 </li>
                 <li>
-                  <img src="images/instagram icon.png" alt="Instagram Icon" />
+                  <img
+                    src="images/instagram icon.png"
+                    alt="Instagram Icon"
+                    loading="lazy"
+                  />
                   <a href="https://www.instagram.com/aethr_pat/" target="_blank"
                     >Instagram</a
                   >
                 </li>
                 <li>
-                  <img src="images/threads icon.png" alt="Threads Icon" />
+                  <img
+                    src="images/threads icon.png"
+                    alt="Threads Icon"
+                    loading="lazy"
+                  />
                   <a href="https://www.threads.net/@aethr_pat" target="_blank"
                     >Threads</a
                   >
                 </li>
                 <li>
-                  <img src="images/tiktok icon.png" alt="TikTok Icon" />
+                  <img
+                    src="images/tiktok icon.png"
+                    alt="TikTok Icon"
+                    loading="lazy"
+                  />
                   <a href="https://www.tiktok.com/@aethr_0" target="_blank"
                     >TikTok</a
                   >
                 </li>
                 <li>
-                  <img src="images/youtube icon.png" alt="YouTube Icon" />
-                  <a href="https://www.youtube.com/@AetherReigns" target="_blank"
+                  <img
+                    src="images/youtube icon.png"
+                    alt="YouTube Icon"
+                    loading="lazy"
+                  />
+                  <a
+                    href="https://www.youtube.com/@AetherReigns"
+                    target="_blank"
                     >YouTube</a
                   >
                 </li>
@@ -477,6 +640,7 @@
                     src="images/icons8 icon.png"
                     alt="Icons8 Logo"
                     class="credits-logo"
+                    loading="lazy"
                   />
                   Icons8
                 </a>
@@ -487,6 +651,7 @@
                     src="images/favicon icon.png"
                     alt="Favicon Logo"
                     class="credits-logo"
+                    loading="lazy"
                   />
                   Favicon
                 </a>
@@ -502,6 +667,7 @@
                     src="images/font awesome icon.png"
                     alt="Font Awesome Logo"
                     class="credits-logo"
+                    loading="lazy"
                   />
                   Font Awesome
                 </a>
@@ -512,6 +678,7 @@
                     src="images/google fonts icon.png"
                     alt="Google Fonts Logo"
                     class="credits-logo"
+                    loading="lazy"
                   />
                   Google Fonts
                 </a>
