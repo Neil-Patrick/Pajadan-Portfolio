@@ -98,15 +98,14 @@ header {
   display: none;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  position: fixed;
+  backdrop-filter: blur(10rem);
+  position: absolute;
   top: 75px;
   right: 0;
   width: 40%;
   max-height: 200vh;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
 }
 
 .header-nav-elements.active {

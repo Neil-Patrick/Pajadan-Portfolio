@@ -146,21 +146,6 @@ function typeWriter2() {
 
 typeWriter1();
 
-/* MODAL :: Profile Pic Modal */
-
-function openModal() {
-  var modal = document.getElementById("imageModal");
-  var fullImage = document.getElementById("fullImage");
-
-  fullImage.src = document.querySelector(".profile-pic").src;
-
-  modal.style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("imageModal").style.display = "none";
-}
-
 /* MODAL :: Credentials Gallery */
 
 function certopenModal(certimg) {
