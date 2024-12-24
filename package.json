@@ -1,0 +1,17 @@
+{
+  "name": "pajadan-portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio! This site showcases my work as an aspiring web developer and programmer. Here, you can find information about my projects, skills, and background.",
+  "main": "website.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0"
+  }
+}
