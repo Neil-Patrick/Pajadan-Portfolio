@@ -298,7 +298,7 @@
 }
 
 .skill-item:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--text-color);
   transform: scale(1.05);
   color: black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
